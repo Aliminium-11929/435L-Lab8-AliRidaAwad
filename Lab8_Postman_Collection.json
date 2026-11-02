@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name": "Lab 8 \u2014 Ali Rida Awad (awa34)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Hello World",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:5001/"
+      }
+    },
+    {
+      "name": "Lab 5: list users",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:5000/api/users"
+      }
+    },
+    {
+      "name": "Lab 5: add sample user (optional)",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:5000/api/users/add",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Sample User\",\n  \"email\": \"sample@example.com\",\n  \"phone\": \"00000000\",\n  \"address\": \"Sample Address\",\n  \"country\": \"Lebanon\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Names from database",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/get_users"
+      }
+    }
+  ]
+}
